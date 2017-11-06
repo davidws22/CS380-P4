@@ -44,7 +44,7 @@ public class Ipv6Client
 		{
 		    //creates a new byte array for data of length 2,4,8,16,32,64,128,256,512,1024,2048
 		    data = new byte[(int)Math.pow(2.0, i) + 40];
-		    //FrameFill returns a byte array in IPv4 format
+		    //FrameFill returns a byte array in IPv6 format
 		    data = FrameFill(data);
 		    ps.write(data);
 
